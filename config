@@ -160,6 +160,8 @@ bar {
 exec --no-startup-id nm-applet
 # Disable click on tap
 exec --no-startup-id synclient TapButton1=0 TapButton2=0
+# bluetooth
+exec --no-startup-id /usr/bin/blueman-applet
 # lock screen
 bindsym $mod+Shift+u exec i3lock
 # Don't change focus with mouse movements
@@ -174,3 +176,15 @@ bindsym XF86Tools exec synclient TouchpadOff=$(( $(synclient -l | grep 'Touchpad
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+# screen capture
+bindsym $mod+Print exec /usr/bin/gnome-screenshot -i
+# workspaces
+exec --no-startup-id "i3-msg 'workspace 1; append_layout ~/.config/i3/comms.json'"
+exec slack
+exec sf-mail
+exec sf-tweetdeck
+exec --no-startup-id "i3-msg 'workspace 2; append_layout ~/.config/i3/time.json'"
+exec sf-waffle
+exec sf-harvest
+exec sf-calendar
+

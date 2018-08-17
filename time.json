@@ -1,0 +1,71 @@
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 100,
+       "width": 111,
+       "x": 628,
+       "y": 980
+    },
+    "name": "scalefactory/readyscale | Waffle.io",
+    "percent": 0.5,
+    "swallows": [
+       {
+       "class": "^Google\\-chrome$",
+       "instance": "^crx_edpgdggeggajmaghcnnfcogflmiknlgb$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1041,
+               "width": 1916,
+               "x": 2,
+               "y": 18
+            },
+            "name": "Timesheet – The Scale Factory Ltd – Harvest",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Google\\-chrome$",
+               "instance": "^crx_lkkehoafpciogndghamajpiliidencce$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 511,
+               "width": 476,
+               "x": 3362,
+               "y": 18
+            },
+            "name": "The Scale Factory – Calendar - Week of 29 July 2018",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Google\\-chrome$",
+               "instance": "^crx_cekbafhmingmmacionoegcmednbmapkh$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
