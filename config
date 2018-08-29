@@ -158,21 +158,21 @@ bar {
 
 # networking
 exec --no-startup-id nm-applet
-# Disable click on tap
-exec --no-startup-id synclient TapButton1=0 TapButton2=0
 # bluetooth
-exec --no-startup-id /usr/bin/blueman-applet
+exec --no-startup-id blueman-applet
 # lock screen
 bindsym $mod+Shift+u exec i3lock
+# Disable click on tap
+exec --no-startup-id synclient TapButton1=0 TapButton2=0
 # Don't change focus with mouse movements
 focus_follows_mouse no
+# Toggle touchpad
+bindsym XF86Tools exec synclient TouchpadOff=$(( $(synclient -l | grep 'TouchpadOff' | awk -F= '{print $2}') ^1 ))
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks 
 bindsym XF86AudioLowerVolume exec amixer -q -D pulse sset Master 5%- && pkill -RTMIN+1 i3blocks
 bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle && pkill -RTMIN+1 i3blocks
 bindsym XF86AudioMicMute exec pactl set-source-mute alsa_input.pci-0000_00_1f.3.analog-stereo toggle
-# Toggle touchpad
-bindsym XF86Tools exec synclient TouchpadOff=$(( $(synclient -l | grep 'TouchpadOff' | awk -F= '{print $2}') ^1 ))
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
@@ -187,4 +187,23 @@ exec --no-startup-id "i3-msg 'workspace 2; append_layout ~/.config/i3/time.json'
 exec sf-waffle
 exec sf-harvest
 exec sf-calendar
+# Floaters
+for_window [title="Slack Call Minipanel"] floating enable border normal
+# Display modes
+# http://christopherdecoster.com/posts/i3-wm/
+set $displayMode "Set display mode [l]aptop [s]tudy [r]oadwarrior [b]ig"
+bindsym $mod+x mode $displayMode
+mode $displayMode {
+    bindsym l exec "\
+                ~/.screenlayout/laptop-only.sh"
+    bindsym s exec "\
+                ~/.screenlayout/home-office.sh"
+    bindsym r exec "\
+                ~/.screenlayout/road-warrior.sh"
+    bindsym b exec "\
+                ~/.screenlayout/big.sh"
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
 
