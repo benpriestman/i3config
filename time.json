@@ -8,7 +8,7 @@
        "x": 628,
        "y": 980
     },
-    "name": "scalefactory/readyscale | Waffle.io",
+    "name": "scalefactory/container-platform | Waffle.io",
     "percent": 0.5,
     "swallows": [
        {
@@ -22,7 +22,7 @@
 {
     "border": "normal",
     "floating": "auto_off",
-    "layout": "splitv",
+    "layout": "tabbed",
     "percent": 0.5,
     "type": "con",
     "nodes": [
@@ -37,11 +37,51 @@
                "y": 18
             },
             "name": "Timesheet – The Scale Factory Ltd – Harvest",
-            "percent": 0.5,
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+                "class": "^Google\\-chrome$",
+                "instance": "^crx_lkkehoafpciogndghamajpiliidencce$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1060,
+               "width": 945,
+               "x": 10,
+               "y": 1090
+            },
+            "name": "Schedule | Float",
+            "percent": 0.333333333333333,
             "swallows": [
                {
                "class": "^Google\\-chrome$",
-               "instance": "^crx_lkkehoafpciogndghamajpiliidencce$"
+               "instance": "^crx_ipgikmhefbmhejdklkmhnmgokjkmendp$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1060,
+               "width": 945,
+               "x": 10,
+               "y": 10
+            },
+            "name": "Deals",
+            "percent": 0.25,
+            "swallows": [
+               {
+               "class": "^Google\\-chrome$",
+               "instance": "^crx_enkoknghiigafpendpmnmpmnmmpdaion$"
                }
             ],
             "type": "con"
@@ -56,8 +96,8 @@
                "x": 3362,
                "y": 18
             },
-            "name": "The Scale Factory – Calendar - Week of 29 July 2018",
-            "percent": 0.5,
+            "name": "The Scale Factory – Calendar - Week of 2 September 2018",
+            "percent": 0.333333333333333,
             "swallows": [
                {
                "class": "^Google\\-chrome$",

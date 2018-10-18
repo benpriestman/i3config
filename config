@@ -153,13 +153,15 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
-        tray_output primary
+#        tray_output primary
 }
 
 # networking
 exec --no-startup-id nm-applet
 # bluetooth
 exec --no-startup-id blueman-applet
+# dropbox
+exec --no-startup-id dropbox start
 # lock screen
 bindsym $mod+Shift+u exec i3lock
 # Disable click on tap
@@ -187,8 +189,11 @@ exec --no-startup-id "i3-msg 'workspace 2; append_layout ~/.config/i3/time.json'
 exec sf-waffle
 exec sf-harvest
 exec sf-calendar
+exec sf-float
+exec sf-hubspot
 # Floaters
 for_window [title="Slack Call Minipanel"] floating enable border normal
+for_window [title="^Authy$"] floating enable border normal
 # Display modes
 # http://christopherdecoster.com/posts/i3-wm/
 set $displayMode "Set display mode [l]aptop [s]tudy [r]oadwarrior [b]ig"
