@@ -191,6 +191,7 @@ exec sf-harvest
 exec sf-calendar
 exec sf-float
 exec sf-hubspot
+exec sf-trello
 # Floaters
 for_window [title="Slack Call Minipanel"] floating enable border normal
 for_window [title="^Authy$"] floating enable border normal
@@ -211,4 +212,14 @@ mode $displayMode {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
+# move workspaces
+bindsym $mod+Control+j move workspace to output left
+bindsym $mod+Control+k move workspace to output down
+bindsym $mod+Control+l move workspace to output up
+bindsym $mod+Control+semicolon move workspace to output right
 
+# alternatively, you can use the cursor keys:
+bindsym $mod+Control+Left move workspace to output left
+bindsym $mod+Control+Down move workspace to output down
+bindsym $mod+Control+Up move workspace to output up
+bindsym $mod+Control+Right move workspace to output right

@@ -1,51 +1,12 @@
+// vim:ts=4:sw=4:et
 {
-    "border": "normal",
-    "current_border_width": 2,
-    "floating": "auto_off",
-    "geometry": {
-       "height": 100,
-       "width": 111,
-       "x": 628,
-       "y": 980
-    },
-    "name": "scalefactory/container-platform | Waffle.io",
-    "percent": 0.5,
-    "swallows": [
-       {
-       "class": "^Google\\-chrome$",
-       "instance": "^crx_edpgdggeggajmaghcnnfcogflmiknlgb$"
-       }
-    ],
-    "type": "con"
-}
-
-{
+    // tabbed split container with 6 children
     "border": "normal",
     "floating": "auto_off",
     "layout": "tabbed",
-    "percent": 0.5,
+    "percent": 1,
     "type": "con",
     "nodes": [
-        {
-            "border": "normal",
-            "current_border_width": 2,
-            "floating": "auto_off",
-            "geometry": {
-               "height": 1041,
-               "width": 1916,
-               "x": 2,
-               "y": 18
-            },
-            "name": "Timesheet – The Scale Factory Ltd – Harvest",
-            "percent": 0.333333333333333,
-            "swallows": [
-               {
-                "class": "^Google\\-chrome$",
-                "instance": "^crx_lkkehoafpciogndghamajpiliidencce$"
-               }
-            ],
-            "type": "con"
-        },
         {
             "border": "normal",
             "current_border_width": 2,
@@ -57,11 +18,31 @@
                "y": 1090
             },
             "name": "Schedule | Float",
-            "percent": 0.333333333333333,
+            "percent": 0.177777777777778,
             "swallows": [
                {
                "class": "^Google\\-chrome$",
                "instance": "^crx_ipgikmhefbmhejdklkmhnmgokjkmendp$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 511,
+               "width": 476,
+               "x": 3362,
+               "y": 18
+            },
+            "name": "The Scale Factory – Calendar - Week of 14 October 2018",
+            "percent": 0.177777777777778,
+            "swallows": [
+               {
+               "class": "^Google\\-chrome$",
+               "instance": "^crx_cekbafhmingmmacionoegcmednbmapkh$"
                }
             ],
             "type": "con"
@@ -77,7 +58,7 @@
                "y": 10
             },
             "name": "Deals",
-            "percent": 0.25,
+            "percent": 0.133333333333333,
             "swallows": [
                {
                "class": "^Google\\-chrome$",
@@ -91,17 +72,57 @@
             "current_border_width": 2,
             "floating": "auto_off",
             "geometry": {
-               "height": 511,
-               "width": 476,
-               "x": 3362,
-               "y": 18
+               "height": 1010,
+               "width": 1916,
+               "x": 2,
+               "y": 49
             },
-            "name": "The Scale Factory – Calendar - Week of 2 September 2018",
-            "percent": 0.333333333333333,
+            "name": "* Boards | Trello",
+            "percent": 0.166666666666667,
             "swallows": [
                {
                "class": "^Google\\-chrome$",
-               "instance": "^crx_cekbafhmingmmacionoegcmednbmapkh$"
+               "instance": "^crx_lbnbkihgheodemclapkpnnpbjlphajeb$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 100,
+               "width": 111,
+               "x": 628,
+               "y": 980
+            },
+            "name": "scalefactory/readyscale | Waffle.io",
+            "percent": 0.166666666666667,
+            "swallows": [
+               {
+               "class": "^Google\\-chrome$",
+               "instance": "^crx_edpgdggeggajmaghcnnfcogflmiknlgb$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1041,
+               "width": 1916,
+               "x": 2,
+               "y": 18
+            },
+            "name": "Timesheet – The Scale Factory Ltd – Harvest",
+            "percent": 0.177777777777778,
+            "swallows": [
+               {
+               "class": "^Google\\-chrome$",
+               "instance": "^crx_lkkehoafpciogndghamajpiliidencce$"
                }
             ],
             "type": "con"
